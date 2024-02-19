@@ -1,0 +1,61 @@
+.hamburger {
+    position: fixed;
+    top: 25px;
+    right: 18px;
+    padding: 4px;
+    border: black solid 1px;
+    background: white;
+    cursor: pointer;
+    z-index:99999;/*  يجب ان يكون فوق كل شيئ*/
+  }
+  .closeIcon {
+    display: none;
+  }
+  
+  .menu {
+    z-index: 9999;/*   iconsيجب ان يكون فوق كل شيئ ما عدا ال*/
+    position: fixed;
+    transform: translateX(100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #5e1e1e;
+    list-style: none;
+    padding-top: 50px;
+    height: 300PX;
+    display: flex;
+    flex-direction: column;
+    gap :15px;
+  }
+  .menu a{
+    color: aliceblue;
+    text-decoration: none;
+    
+  }
+  .showMenu {
+    transform: translateX(80%);
+  }
+  .overlay-hamburger {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* تعيين لون الغطاء وتعتيمه */
+    z-index: 999; /*   hamburgerتأكد من أن الغطاء فوق كل شيء آخر عدا جزئية ال*/
+    display: none;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* تعيين لون الغطاء وتعتيمه */
+    z-index: 999999; /* تأكد من أن الغطاء فوق كل شيء آخر */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
